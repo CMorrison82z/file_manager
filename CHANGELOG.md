@@ -1,4 +1,4 @@
-# Revision history for twitch-chat
+# Revision history for file-manager
 
 ## 0.1.0.0 -- YYYY-mm-dd
 
