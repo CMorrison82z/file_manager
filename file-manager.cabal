@@ -1,0 +1,42 @@
+cabal-version:   3.0
+name:            file-manager
+version:         0.1.0.0
+license:         NONE
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall -threaded -rtsopts
+
+library
+    import:           warnings
+    exposed-modules:
+                      Temp
+                    , Display
+                    , UserInput
+                    , Types
+                    , Util
+                    , StateMan
+
+    hs-source-dirs:   src
+
+    build-depends:    base ^>=4.17.2.1
+                    , bytestring
+                    , containers
+                    , transformers
+                    , safe
+                    , directory
+                    , filepath
+                    , vty-unix
+                    , vty
+
+    default-language: Haskell2010
+
+executable file-manager
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.17.2.1
+                    , safe
+                    , file-manager
+    hs-source-dirs:   app
+    default-language: Haskell2010

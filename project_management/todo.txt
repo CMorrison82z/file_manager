@@ -1,0 +1,7 @@
+(-) Yank, Put, Delete
+  (X) Operations done
+  ( ) Display files selected / yanked / dyanked
+- Mult-file selection
+- Command hints (for multi-key commands, like `gg` and `gh`). Shows available commands given first key(s) pressed
+- Improve debugging interface
+(X) Implement scrolling.

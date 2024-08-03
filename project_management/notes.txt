@@ -1,0 +1,1 @@
+Regarding `Map` : If you don't care about ordering, consider use Data.HashMap.Strict from the unordered-containers package instead.
